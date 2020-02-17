@@ -1,3 +1,5 @@
+
+'use strict'
 var coutner = 0;
 var uName = prompt("Hi there, Whats your name ?");
 
@@ -53,5 +55,5 @@ else {
 }
 
 
-document.write(`you got  ${coutner} questions right `);
-document.write(uName +' thank you for playing the game!' );
+document.write(`<p id="answer"> you got  ${coutner} questions right </p> `);
+document.write(`<p id="goodbye"> ${uName} ,thank you for playing the game! </p>`);
