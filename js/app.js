@@ -6,11 +6,12 @@ var uName = prompt("Hi there, Whats your name ?");
 console.log(uName);
 alert(uName + " what a nice name !,Nwrt al site ");
 
- 
+
 
 var start = prompt("So " + uName + " how about we play a gussing game about me?");
 
 if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
+    coutner++;
     var myAge = prompt("Type yes if u think am older than 20 and no if you think am younger than that ");
     if (myAge.toLowerCase() == 'yes' || myAge.toLowerCase() == 'y') {
         alert("Thats right ,nice guess " + uName);
@@ -46,6 +47,61 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
         coutner++;
 
     }
+    var y = Math.floor(Math.random() * 10 + 1);
+    console.log(y);
+    var guess = 1;
+    while (x !== y && guess < 5) {
+        var x = prompt("Guess a number between 1 and 10");
+
+        if (x == y) {
+            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                + guess + " GUESS ");
+            coutner++
+            break;
+        }
+        else if (x > y) {
+            guess++;
+            alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+        }
+        else if (x < y) {
+            guess++;
+            alert("OOPS SORRY!! TRY A GREATER NUMBER")
+        }
+
+    }
+    if (guess == 5) {
+        alert('You finished all of you attempts , the right answer is ' + y);
+    } else {
+      
+    }
+
+
+    var favFood = ['shawrma', 'mansaf', 'kabsah', 'indomi', 'magloba', 'ozi'];
+
+      var i =0;
+    for (i ; i < favFood.length; i++) {
+        console.log(i);
+       var userGuess = prompt('Whats my fav food ?').toLowerCase();
+        if (userGuess == favFood[i]) {
+            alert("I see your also a person of culture <3 ");
+            console.log(favFood);
+            coutner++;
+            break;
+            
+        } else {
+            alert("Guess again!");
+        }
+
+    }
+  
+    if (i == favFood.length ) {
+  
+        alert(`You guessed wrong my friend the right answers are ${favFood}`); 
+                
+    }else{
+        
+
+    }
 
 }
 
@@ -55,5 +111,5 @@ else {
 }
 
 
-document.write(`<p id="answer"> you got  ${coutner} questions right </p> `);
+document.write(`<p id="answer"> you got  ${coutner}  out of 7  </p> `);
 document.write(`<p id="goodbye"> ${uName} ,thank you for playing the game! </p>`);
