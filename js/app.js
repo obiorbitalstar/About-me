@@ -72,37 +72,71 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     if (guess == 5) {
         alert('You finished all of you attempts , the right answer is ' + y);
     } else {
-      
+
     }
 
 
     var favFood = ['shawrma', 'mansaf', 'kabsah', 'indomi', 'magloba', 'ozi'];
 
-      var i =0;
-    for (i ; i < favFood.length; i++) {
-        console.log(i);
-       var userGuess = prompt('Whats my fav food ?').toLowerCase();
-        if (userGuess == favFood[i]) {
-            alert("I see your also a person of culture <3 ");
-            console.log(favFood);
-            coutner++;
-            break;
-            
+    // var i = 0;
+    // loop: {
+    //     for (i; i < favFood.length; i++) {
+    //         console.log(i);
+    //         var userGuess = prompt('Whats my fav food ?').toLowerCase();
+    //         switch (userGuess) {
+    //             case favFood[0]:
+    //             case favFood[1]:
+    //             case favFood[2]:
+    //             case favFood[3]:
+    //             case favFood[4]:
+    //             case favFood[5]:
+    //                 alert("I see your also a person of culture <3 ");
+    //                 console.log(favFood);
+    //                 coutner++;
+    //                 break loop;
+
+
+    //             default:
+    //                 alert("Guess again ");
+    //                 break;
+    //         }
+
+           
+    //     }
+
+    //     if (i == favFood.length) {
+
+    //         alert(`You guessed wrong my friend the right answers are ${favFood}`);
+
+    //     } else {
+
+
+    //     }
+
+    // } 
+
+    var flag = false;
+    for (let i = 0; i < favFood.length; i++) {
+        var userGuess = prompt('What is my fav food? ').toLowerCase();
+        favFood.forEach(function(i) {
+            console.log(i);
+            if (i == userGuess) {
+                alert("I see your also a person of culture aswell ");
+               
+                coutner++;
+                flag = true;        
+
+            } else {
+
+            } 
+        });
+        if (flag === true){
+            break; 
         } else {
-            alert("Guess again!");
+            alert("guess again");
         }
 
     }
-  
-    if (i == favFood.length ) {
-  
-        alert(`You guessed wrong my friend the right answers are ${favFood}`); 
-                
-    }else{
-        
-
-    }
-
 }
 
 else {

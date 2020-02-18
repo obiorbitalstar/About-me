@@ -16,6 +16,12 @@ margin-top: 100px;
 padding: 50px;
 
 }
+ul {
+    background-color: darkkhaki;
+    border: 5px solid rgb(213, 250, 6);
+    margin-top: 100px;
+    padding: 50px;
+}
 
 #answer{
 border: 5px solid green;
@@ -26,5 +32,13 @@ margin-top: 100px;
     border: 5px solid purple;
 padding: 50px;
 margin-top: 50px;
+
+}
+
+#favmovies {
+    background-color: darkkhaki;
+    border: 5px solid rgb(213, 250, 6);
+    margin-top: 100px;
+    padding: 50px;
 
 }
