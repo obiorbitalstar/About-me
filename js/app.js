@@ -55,7 +55,7 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
 
         if (x == y) {
             alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
-                + guess + " GUESS ");
+                + guess + " GUESSES ");
             coutner++
             break;
         }
@@ -76,7 +76,6 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     }
 
 
-    var favFood = ['shawrma', 'mansaf', 'kabsah', 'indomi', 'magloba', 'ozi'];
 
     // var i = 0;
     // loop: {
@@ -101,7 +100,7 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     //                 break;
     //         }
 
-           
+
     //     }
 
     //     if (i == favFood.length) {
@@ -115,29 +114,38 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
 
     // } 
 
+    var favFood = ['shawrma', 'mansaf', 'kabsah', 'indomi', 'magloba', 'ozi'];
     var flag = false;
-    for (let i = 0; i < favFood.length; i++) {
-        var userGuess = prompt('What is my fav food? ').toLowerCase();
-        favFood.forEach(function(i) {
-            console.log(i);
-            if (i == userGuess) {
-                alert("I see your also a person of culture aswell ");
-               
-                coutner++;
-                flag = true;        
 
+    for (let i = 0; i < favFood.length; i++) {
+
+        var userGuess = prompt('What is my fav food? ').toLowerCase();
+
+        favFood.forEach(function (y) {
+
+            console.log(y);
+
+            if (y == userGuess) {
+
+                alert("I see your also a person of culture aswell ");
+
+                coutner++;
+
+                flag = true;
+                
             } else {
 
-            } 
+            }
         });
-        if (flag === true){
-            break; 
+        if (flag === true) {
+            break;
         } else {
             alert("guess again");
         }
 
     }
 }
+ 
 
 else {
     alert("thats too bad, good bye");
