@@ -1,4 +1,3 @@
-
 'use strict'
 
 var coutner = 0;
@@ -7,7 +6,7 @@ var uName = prompt("Hi there, Whats your name ?");
 console.log(uName);
 alert(uName + " what a nice name !,Nwrt al site ");
 
-//Question 1
+
 
     
 
@@ -15,6 +14,7 @@ var start = prompt("So " + uName + " how about we play a gussing game about me?"
 
 if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     coutner++;
+    
     function part1() {
     //Question2
     var myAge = prompt("Type yes if u think am older than 20 and no if you think am younger than that ");
@@ -24,6 +24,8 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     } else {
         alert("Tough luck " + uName + " lets try another question");
     }
+}
+    function part2(){
 //Question 3
     var coffee = prompt("Do i feel like a coffee person?");
     if (coffee.toLowerCase() == 'yes' || coffee.toLowerCase() == 'y') {
@@ -32,6 +34,8 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     } else {
         alert("If you think all this enthusiasm happens without the power of caffeine,Your wrong my friend");
     }
+}
+function part3(){
 //Question 4
     var art = prompt("Am i an artist ? ");
     if (art.toLowerCase() == 'yes' || art.toLowerCase() == 'y') {
@@ -41,7 +45,9 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
         alert('sadly you are correct , play that same game in a year and hopfully the answer to this question will change!');
         coutner++;
     }
+}
 
+function part4(){
 //Question 5
     var nice = prompt("Do i feel like a sport person ?");
     if (nice.toLowerCase() == 'yes' || nice.toLowerCase() == 'y') {
@@ -51,8 +57,9 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
         alert("Thats right,The only mucles i need to train are my fingers while typing code!");
         coutner++;
 
-    }}
-function part2(){
+    }
+}
+function part5(){
     //Question 6
     var y = Math.floor(Math.random() * 10 + 1);
     console.log(y);
@@ -78,10 +85,10 @@ function part2(){
     }
     if (guess == 5) {
         alert('You finished all of you attempts , the right answer is ' + y);
-    } else {
-
     }
+}
 
+function part6(){
 //Question 7
     var favFood = ['shawrma', 'mansaf', 'kabsah', 'indomi', 'magloba', 'ozi'];
 
@@ -145,9 +152,14 @@ function part2(){
 
     }
 }
-    part1();
-    part2();
+part1();
+part2();
+part3();
+part4();
+part5();
+part6();
 }
+
 else {
     alert("thats too bad, good bye");
     window.close();
