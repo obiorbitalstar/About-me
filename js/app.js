@@ -12,12 +12,15 @@ alert(uName + " what a nice name !,Nwrt al site ");
 
 var start = prompt("So " + uName + " how about we play a gussing game about me?");
 
+// console.log(start);
 if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     coutner++;
     
     function part1() {
     //Question2
     var myAge = prompt("Type yes if u think am older than 20 and no if you think am younger than that ");
+    // console.log(myAge); 
+
     if (myAge.toLowerCase() == 'yes' || myAge.toLowerCase() == 'y') {
         alert("Thats right ,nice guess " + uName);
         coutner++;
@@ -28,6 +31,8 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
     function part2(){
 //Question 3
     var coffee = prompt("Do i feel like a coffee person?");
+    // console.log(coffee);
+
     if (coffee.toLowerCase() == 'yes' || coffee.toLowerCase() == 'y') {
         alert('Indeed i am!, 99% of prgrammers except  instructor Razan drink coffee!');
         coutner++;
@@ -37,7 +42,8 @@ if (start.toLowerCase() == 'yes' || start.toLowerCase() == "y") {
 }
 function part3(){
 //Question 4
-    var art = prompt("Am i an artist ? ");
+    var art = prompt("Am i an artist ? "); 
+    // console.log(art);
     if (art.toLowerCase() == 'yes' || art.toLowerCase() == 'y') {
         alert("ooo i wish,am still leartning though way far from being called an artist!")
 
@@ -50,6 +56,7 @@ function part3(){
 function part4(){
 //Question 5
     var nice = prompt("Do i feel like a sport person ?");
+    // console.log(nice);
     if (nice.toLowerCase() == 'yes' || nice.toLowerCase() == 'y') {
         alert("actually thats a big no no for me , am in good health but not into any kind of sports");
 
@@ -66,7 +73,7 @@ function part5(){
     var guess = 1;
     while (x !== y && guess < 5) {
         var x = prompt("Guess a number between 1 and 10");
-
+        // console.log(x); 
         if (x == y) {
             alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
                 + guess + " GUESSES ");
@@ -135,6 +142,7 @@ function part6(){
     for (let i = 0; i < favFood.length; i++) {
 
         var userGuess = prompt('What is my fav food? ').toLowerCase();
+        // console.log(userGuess);
 
         favFood.forEach(function (y) {
 
